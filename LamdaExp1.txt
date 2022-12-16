@@ -1,0 +1,35 @@
+1. () -> 123.45
+
+@FunctionalInterface
+interface MyInterface {
+	double myFunc();
+}
+MyInterface L = () -> 123.45;
+System.out.println(L.myFunc());                                      // 123.45
+
+2. (n) -> n * n 
+
+@FunctionalInterface
+interface MyInterface {
+	int myFunc(int n)
+}
+MyInterface L = (n) -> n*n;
+System.out.println(L.myFunc());
+
+3. (str) -> str.length()
+
+@FunctionalInterface
+interface MyInterface {
+	int myFunc(String str);
+}
+MyInterface L = (str) -> str.length();
+System.out.println(L.myFunc());
+
+4. (n) -> n % 2 == 0
+
+@FunctionalInterface
+interface MyInterface {
+	boolean myFunc( int n);
+}
+MyInterface L = (n) -> n % 2 == 0;
+System.out.println(L.myFunc(n));

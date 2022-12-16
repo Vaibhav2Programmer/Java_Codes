@@ -1,0 +1,12 @@
+1. File Class Basics
+
+(a). File f = new("C:\\Data\\First.java"); - absolute path 
+		OR
+      File f = new("C:/Data/First.java");
+
+(b). File f1 = new("C:\\Data", "First.java"); - (String parent, String name)
+
+(c). File f1 = new("C:\\Data");
+
+       File f2 = new(f1,"First.java");
+
